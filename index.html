@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dear Liz 系統入口</title>
+<style>
+  :root {
+    --bg: #faf7f4;
+    --card: #ffffff;
+    --text: #3a3330;
+    --muted: #8a7f79;
+    --accent: #b88a7a;
+    --accent-hover: #a07464;
+    --border: #ece4de;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    padding: 24px 16px;
+  }
+  .wrap { width: 100%; max-width: 420px; text-align: center; }
+  h1 { font-size: 24px; font-weight: 600; margin: 0 0 6px; letter-spacing: 1px; }
+  p.sub { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+  a.btn {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 14px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color .15s, transform .15s;
+  }
+  a.btn:hover { border-color: var(--accent); transform: translateY(-2px); }
+  a.btn .name { font-size: 18px; font-weight: 600; color: var(--accent-hover); }
+  a.btn .desc { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  footer { margin-top: 28px; font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Dear Liz 系統入口</h1>
+    <p class="sub">請選擇要進入的系統</p>
+
+    <a class="btn" href="https://script.google.com/macros/s/AKfycbzTx_PT9TNX_c5z1D8M-pxxIrfZViUBYtz870ceiQklxyceS8VbUhSSUsNNAmg1msXZOQ/exec" target="_blank" rel="noopener">
+      <div class="name">訪談清單</div>
+    </a>
+
+    <a class="btn" href="https://script.google.com/macros/s/AKfycbz8b6YrnVaiikH7Tuxkba6G0sQ74x8hd_xMvYws5odOdAu90UPxzMw_Y9NjHFR6A-F0/exec" target="_blank" rel="noopener">
+      <div class="name">側錄清單</div>
+    </a>
+
+    <footer>親愛的莉絲 Dear Liz</footer>
+  </div>
+</body>
+</html>
