@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>把愛送給最重要的人｜Dear Liz 聖誕年末優惠</title>
+<meta name="description" content="Dear Liz 年末感謝禮：當日諮詢預定任一寫真方案，方案現折 $2,000 或儲值金 $4,000。">
+<meta property="og:title" content="把愛送給最重要的人｜Dear Liz 年末感謝禮 🎁">
+<meta property="og:description" content="即日起至 12/31，當日諮詢預定任一寫真方案，方案現折 $2,000 或儲值金 $4,000。">
+<meta property="og:image" content="https://dearlizjas.github.io/dearliz-video/christmas-letter/photos/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Cinzel:wght@400;500&family=Pinyon+Script&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf8f9;--white:#fff;--ink:#3f4a63;--blue:#5873a6;--blue-lt:#c9d5ec;--pink:#c97b93;--pink-lt:#f3dde4;--pink-bg:#fbf1f4;--line:#ecd3db;--muted:#8d8792;
+  --serif:"Noto Serif TC","Songti TC",serif;--cap:"Cinzel",Georgia,serif;--script:"Pinyon Script",cursive;--num:"Cormorant Garamond",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:radial-gradient(120% 60% at 100% 0%,#eef2fb 0%,transparent 60%),radial-gradient(90% 50% at 0% 30%,#fbeef2 0%,transparent 60%),var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.8;font-size:16px;overflow-x:hidden}
+img{display:block;width:100%;height:100%;object-fit:cover}
+:focus-visible{outline:2px solid var(--pink);outline-offset:3px}
+.wrap{width:min(500px,100% - 32px);margin-inline:auto}
+canvas.fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:6}
+.rel{position:relative;z-index:1}
+.rise{opacity:0;transform:translateY(14px);animation:rise 1.2s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* 信封開場 */
+:root{--grain:url("data:image/svg+xml,%3Csvg xmlns='http:%2F%2Fwww.w3.org%2F2000%2Fsvg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .42 0 0 0 0 .46 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.intro{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:30px 0 40px;text-align:center;transition:opacity .7s,transform .7s}
+.intro.gone{opacity:0;transform:translateY(-20px);pointer-events:none}
+.intro .script{font-family:var(--script);font-size:clamp(58px,18vw,86px);line-height:.95;color:var(--pink);animation-delay:.1s}
+.intro .caps{font-family:var(--cap);font-size:clamp(14px,4.4vw,19px);letter-spacing:.32em;padding-left:.32em;color:var(--blue);margin-top:12px;animation-delay:.45s}
+.intro .tiny{font-family:var(--cap);font-size:11px;letter-spacing:.5em;padding-left:.5em;color:var(--muted);margin-top:8px;animation-delay:.7s}
+.env{position:relative;width:min(440px,100%);aspect-ratio:3/2;perspective:1400px;cursor:pointer;animation-delay:.9s}
+.env .back{position:absolute;inset:0;border-radius:4px;background:linear-gradient(180deg,#eadde3,#f1e7eb 55%,#f6eff2);box-shadow:0 26px 40px -22px rgba(150,95,120,.45),0 2px 4px rgba(150,95,120,.12)}
+.env .peek{position:absolute;left:7%;right:7%;top:6%;height:80%;background:var(--grain),#fffdfc;border:1px solid #f0e3e8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;transition:transform 1.1s cubic-bezier(.5,0,.2,1) .7s;z-index:2}
+.env .peek b{font-family:var(--script);font-weight:400;font-size:32px;line-height:1;color:var(--pink)}
+.env .peek small{font-family:var(--cap);letter-spacing:.3em;font-size:10px;color:var(--blue)}
+.env .pocket{position:absolute;inset:0;z-index:3;border-radius:4px;background:var(--grain),linear-gradient(170deg,#fffafb,#f7eef1);clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);box-shadow:inset 0 0 0 1px #efe2e7}
+.env .pocket::after{content:"";position:absolute;inset:7px;border:1px solid #ecd3db;clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%)}
+.env .flap{position:absolute;left:0;right:0;top:0;height:60%;z-index:4;transform-origin:top center;transition:transform .8s cubic-bezier(.6,0,.3,1),z-index 0s .4s}
+.env .flap::before{content:"";position:absolute;inset:0;background:var(--grain),linear-gradient(180deg,#fcf6f8,#f3e8ec);clip-path:polygon(0 0,100% 0,50% 100%);filter:drop-shadow(0 3px 3px rgba(150,95,120,.16))}
+.env .mark{position:absolute;left:0;right:0;top:15%;z-index:5;font-family:var(--cap);font-size:13px;letter-spacing:.34em;padding-left:.34em;color:var(--blue);transition:opacity .3s}
+.env .mark small{display:block;font-size:7px;letter-spacing:.4em;margin-top:3px;color:var(--muted)}
+.seal{position:absolute;left:50%;top:56%;width:24%;transform:translate(-50%,-50%);z-index:6;border:0;padding:0;background:none;cursor:pointer;transition:transform .45s,opacity .45s;animation:pulse 2.4s ease-in-out 2.2s infinite}
+.seal svg{display:block;width:100%;height:auto;overflow:visible}
+@keyframes pulse{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.07)}}
+.env .bow2{position:absolute;z-index:5;width:22%;left:-4%;top:-9%;transform:rotate(-16deg);pointer-events:none}
+.env .flake{position:absolute;z-index:5;right:6%;bottom:9%;color:#b9c8e8;font-size:20px;pointer-events:none}
+.env.open .seal{animation:none;transform:translate(-50%,-50%) scale(.4);opacity:0;pointer-events:none}
+.env.open .mark,.env.open .bow2,.env.open .flake{opacity:0}
+.env.open .flap{transform:rotateX(180deg);z-index:1}
+.env.open .peek{transform:translateY(-42%)}
+.tap{margin:0;font-size:14px;letter-spacing:.3em;padding-left:.3em;color:var(--muted);animation-delay:1.3s}
+.tap em{font-style:normal;color:var(--pink)}
+#main{display:none}
+#main.show{display:block}
+/* 信紙 */
+.sheet{position:relative;margin:18px auto 0;padding:6px 0 30px;background:var(--grain),#fffdfc;border-radius:4px;box-shadow:0 30px 60px -40px rgba(150,95,120,.55),0 1px 3px rgba(150,95,120,.08)}
+.sheet::before{content:"";position:absolute;inset:10px;border:1px solid var(--line);border-radius:2px;pointer-events:none}
+.sheet .wrap{width:calc(100% - 36px)}
+.sheet-wrap{width:min(520px,100% - 20px);margin-inline:auto}
+.replay{display:block;margin:16px auto 0;padding:8px 20px;border:1px solid var(--line);border-radius:30px;background:#fff;color:var(--muted);font:inherit;font-size:13px;letter-spacing:.14em;cursor:pointer}
+
+/* 照片框：沒有照片時顯示提示 */
+.ph{position:relative;overflow:hidden;background:linear-gradient(135deg,#f6e6ec,#e6ecf8)}
+.ph::after{content:attr(data-label);position:absolute;inset:0;display:grid;place-items:center;font-size:13px;letter-spacing:.1em;color:#a58a99;text-align:center;padding:10px}
+.ph.has::after{display:none}
+.ph img{position:relative;z-index:1}
+
+/* 主視覺 */
+.hero{padding:30px 0 10px;text-align:center}
+.brand{font-family:var(--cap);font-size:22px;letter-spacing:.3em;padding-left:.3em;color:var(--pink);animation-delay:.1s}
+h1{margin:14px 0 0;font-weight:700;font-size:clamp(34px,10.5vw,48px);line-height:1.3;letter-spacing:.08em;color:var(--blue);animation-delay:.3s}
+h1 .love{color:var(--pink);position:relative}
+.period{display:inline-flex;align-items:center;gap:12px;margin-top:12px;font-weight:600;font-size:18px;letter-spacing:.12em;color:var(--pink);animation-delay:.5s}
+.period i{display:block;width:44px;height:1px;background:var(--pink)}
+.period b{font-family:var(--num);font-size:24px;letter-spacing:.05em}
+.hero-photo{position:relative;margin:22px auto 0;aspect-ratio:4/5;border-radius:200px 200px 14px 14px;border:6px solid #fff;box-shadow:0 20px 40px -22px rgba(88,115,166,.45);animation-delay:.6s}
+.thanks{position:absolute;left:-6px;bottom:18px;z-index:3;font-family:var(--script);font-size:56px;line-height:1;color:var(--pink);transform:rotate(-10deg);text-shadow:0 2px 10px rgba(255,255,255,.95),0 0 2px #fff}
+.spark{position:absolute;color:#f0b8c8;font-size:22px;z-index:3}
+
+/* 感性文字 */
+.note-letter{margin:34px 6px 0;text-align:center;animation-delay:.8s}
+.note-letter::before{content:"";display:block;width:56px;height:1px;margin:0 auto 22px;background:linear-gradient(90deg,transparent,var(--pink),transparent)}
+.note-letter p{margin:0;font-size:15.5px;line-height:2.15;letter-spacing:.08em;color:var(--ink)}
+.note-letter .xmas{margin-top:16px;color:var(--pink);font-weight:600;letter-spacing:.1em}
+.note-letter .sign{margin-top:8px;font-size:14px;color:var(--muted)}
+.note-letter .sign span{font-family:var(--script);font-size:30px;color:var(--pink);vertical-align:-4px;margin-left:4px}
+
+/* 早鳥 */
+.early .ticket{padding:60px 18px 22px}
+.early-in{display:grid;grid-template-columns:.9fr 1.1fr;gap:16px;align-items:stretch}
+.early .ph{border-radius:4px;aspect-ratio:auto;min-height:230px;box-shadow:0 10px 22px -14px rgba(88,115,166,.6)}
+.early .ph img{position:absolute;inset:0;object-position:50% 20%}
+.early-tx{display:flex;flex-direction:column;justify-content:center;text-align:center;padding:6px 0}
+.early .for{font-family:var(--script);font-size:34px;line-height:1;color:var(--pink)}
+.early .d{margin-top:8px;font-family:var(--num);font-weight:600;font-size:17px;color:var(--blue);letter-spacing:.08em}
+.early .d i{display:inline-block;width:20px;height:1px;background:var(--blue);vertical-align:middle;margin:0 6px}
+.early .rule{width:40px;height:1px;margin:12px auto;background:var(--line)}
+.early h3{margin:0;font-size:13px;font-weight:600;letter-spacing:.24em;padding-left:.24em;color:var(--pink)}
+.early .gift{margin:6px 0 0;font-size:16.5px;font-weight:700;letter-spacing:.05em;line-height:1.55;color:var(--blue)}
+.early .left{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);font-size:12px;letter-spacing:.08em;color:var(--muted)}
+.early .left b{font-family:var(--num);font-size:19px;color:var(--pink)}
+.tk-wrap.hide{display:none}
+
+/* 年末感謝禮票卡 */
+.ticket{position:relative;margin:0;padding:44px 18px 26px;background:var(--grain),#fff;border-radius:6px;text-align:center;box-shadow:0 22px 40px -26px rgba(201,123,147,.7);
+  -webkit-mask:radial-gradient(circle 14px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 14px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat;
+          mask:radial-gradient(circle 14px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 14px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat}
+.ticket::before{content:"";position:absolute;inset:10px;border:1px solid var(--line);border-radius:3px;pointer-events:none}
+.tag{position:absolute;left:50%;top:-22px;transform:translateX(-50%);z-index:2;padding:8px 26px;background:var(--pink);color:#fff;font-weight:600;font-size:21px;letter-spacing:.24em;padding-left:calc(26px + .24em);white-space:nowrap;border-radius:4px;box-shadow:0 0 0 3px #fff,0 0 0 4px var(--pink),0 10px 18px -8px rgba(201,123,147,.8)}
+.tag::before,.tag::after{content:"✦";font-size:11px;margin:0 10px;vertical-align:middle}
+.bow{position:absolute;left:-8px;top:-34px;width:84px;z-index:3;transform:rotate(-14deg)}
+.tk-wrap{position:relative;margin-top:56px}
+.cond{margin:0 0 16px;font-size:15px;font-weight:600;letter-spacing:.08em;color:var(--pink)}
+.cond{font-size:14px}.cond::before{content:"♥";font-size:10px;margin:0 8px;vertical-align:2px}
+.or{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px}
+.or h4{margin:0;font-size:19px;font-weight:600;letter-spacing:.18em;padding-left:.18em;color:var(--blue)}
+.amt{font-family:var(--num);font-weight:600;font-size:clamp(40px,12.5vw,54px);line-height:1.1;color:var(--pink)}
+.amt sup{font-size:.42em;vertical-align:.1em;margin-right:1px}
+.or small{display:block;font-size:11.5px;letter-spacing:.06em;color:var(--muted);line-height:1.5}
+.or .hrt{width:44px;height:40px;display:grid;place-items:center;font-weight:600;font-size:15px;color:var(--pink);background:var(--pink-lt);clip-path:path("M22 39C10 30 1 22 1 12.5 1 6 6 1 12 1c4.3 0 8 2.6 10 6 2-3.4 5.7-6 10-6 6 0 11 5 11 11.5C43 22 34 30 22 39Z")}
+
+/* 作品 */
+.works{margin-top:46px;text-align:center}
+.works .s{font-family:var(--script);font-size:40px;line-height:1;color:var(--pink)}
+.works h2{margin:4px 0 4px;font-size:20px;font-weight:700;letter-spacing:.16em;padding-left:.16em;color:var(--blue)}
+.works p{margin:0 0 16px;font-size:13.5px;color:var(--muted);letter-spacing:.08em}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.grid .ph{aspect-ratio:4/5;border-radius:10px}
+.grid .ph.wide{grid-column:1/-1;aspect-ratio:3/2}
+.grid .ph:not(.wide){aspect-ratio:2/3}
+
+/* 預約 */
+.cta{margin:38px 0 0;text-align:center}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;max-width:340px;min-height:56px;margin:0 auto;border-radius:40px;background:linear-gradient(90deg,#d58aa1,var(--pink));color:#fff;font-size:17px;font-weight:600;letter-spacing:.18em;padding-left:.18em;text-decoration:none;box-shadow:0 14px 26px -12px rgba(201,123,147,.85)}
+.note{margin:12px 0 0;font-size:12.5px;color:var(--muted);letter-spacing:.06em}
+.expired{display:none;margin-top:30px;padding:24px;background:#fff;border-radius:10px;text-align:center;color:var(--muted)}
+footer{text-align:center;padding:40px 0 calc(40px + env(safe-area-inset-bottom));color:var(--muted)}
+footer .brand{font-size:16px}
+footer p{margin:4px 0 0;font-size:12px;letter-spacing:.14em}
+.float{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));transform:translate(-50%,20px);z-index:8;opacity:0;pointer-events:none;padding:12px 30px;border-radius:40px;background:linear-gradient(90deg,#d58aa1,var(--pink));color:#fff;font-size:15px;font-weight:600;letter-spacing:.14em;text-decoration:none;white-space:nowrap;box-shadow:0 12px 24px -10px rgba(201,123,147,.9);transition:all .35s}
+.float.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+@media (prefers-reduced-motion:reduce){.rise{animation:none;opacity:1;transform:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<canvas class="fx" id="fx"></canvas>
+
+<section class="intro wrap rel" id="intro">
+  <div>
+    <div class="script rise">Merry Christmas</div>
+    <div class="caps rise">A LETTER FOR YOU</div>
+    <div class="tiny rise">DEAR LIZ</div>
+  </div>
+  <div class="env rise" id="env" aria-label="打開聖誕信">
+    <div class="back"></div>
+    <div class="peek"><b>For you</b><small>DEAR LIZ</small></div>
+    <div class="pocket"></div>
+    <div class="flap"></div>
+    <div class="mark">DEAR LIZ<small>PHOTOGRAPHY</small></div>
+    <button class="seal" id="seal" aria-label="輕觸封蠟打開信"><svg viewBox="8 6 104 104" aria-hidden="true">
+      <defs>
+        <linearGradient id="rb" x1="0" x2="1"><stop offset="0" stop-color="#8e3b55"/><stop offset=".45" stop-color="#c96f8a"/><stop offset=".6" stop-color="#e3a0b4"/><stop offset="1" stop-color="#9c4560"/></linearGradient>
+        <radialGradient id="wx" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="#d77f98"/><stop offset=".45" stop-color="#b0506c"/><stop offset="1" stop-color="#6f2440"/></radialGradient>
+        <radialGradient id="pr" cx=".5" cy=".42" r=".6"><stop offset="0" stop-color="#b85a75"/><stop offset=".8" stop-color="#9a405c"/><stop offset="1" stop-color="#7a2c46"/></radialGradient>
+        <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="3.5" flood-color="#5a1c33" flood-opacity=".45"/></filter>
+        <filter id="emb"><feDropShadow dx="0" dy="1" stdDeviation=".3" flood-color="#ffd6e1" flood-opacity=".55"/><feDropShadow dx="0" dy="-.8" stdDeviation=".3" flood-color="#4a1528" flood-opacity=".6"/></filter>
+      </defs>
+      <path d="M104.0 52.9Q103.4 58.0 102.4 62.7Q101.5 67.5 101.0 72.5Q100.5 77.5 98.1 82.0Q95.7 86.5 91.7 89.6Q87.7 92.7 83.3 95.0Q78.9 97.2 74.1 98.1Q69.4 99.0 64.7 100.6Q60.0 102.2 55.3 100.6Q50.7 98.9 45.8 98.2Q41.0 97.5 36.3 95.6Q31.5 93.7 29.3 89.0Q27.0 84.3 23.7 80.7Q20.5 77.0 17.9 72.6Q15.4 68.2 16.5 63.1Q17.6 58.0 17.9 53.2Q18.2 48.5 18.9 43.5Q19.6 38.6 20.3 32.7Q21.0 26.9 26.6 25.0Q32.2 23.2 36.6 20.9Q41.0 18.6 45.3 15.7Q49.7 12.7 54.8 14.3Q60.0 16.0 65.1 14.6Q70.2 13.2 74.5 16.2Q78.7 19.1 83.7 20.6Q88.7 22.0 90.9 26.8Q93.1 31.6 96.1 35.4Q99.0 39.2 101.8 43.5Q104.6 47.8 104.0 52.9Z" fill="url(#wx)" filter="url(#sh)"/>
+      <circle cx="60" cy="58" r="31" fill="url(#pr)"/>
+      <circle cx="60" cy="58" r="31" fill="none" stroke="#6a2139" stroke-opacity=".55" stroke-width="2"/>
+      <circle cx="60" cy="58" r="33.5" fill="none" stroke="#e7a7ba" stroke-opacity=".35" stroke-width="1"/>
+      <circle cx="60" cy="58" r="26" fill="none" stroke="#e9b2c2" stroke-opacity=".45" stroke-width=".7" stroke-dasharray="1.2 2.2"/>
+      <text x="60" y="67" text-anchor="middle" font-family="Pinyon Script, cursive" font-size="27" fill="#a64965" filter="url(#emb)">DL</text>
+      <path d="M30 40 Q38 22 58 18" fill="none" stroke="#fff" stroke-opacity=".38" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="78" cy="88" rx="6" ry="2" fill="#fff" opacity=".12" transform="rotate(-25 78 88)"/>
+    </svg></button>
+  </div>
+  <p class="tap rise">輕觸<em>封蠟</em>，打開你的聖誕禮物</p>
+</section>
+
+<div id="main">
+<div class="sheet-wrap rel"><div class="sheet">
+<header class="hero wrap rel">
+  <div class="brand rise">DEAR LIZ</div>
+  <h1 class="rise">把<span class="love">愛</span>送給<br>最重要的人</h1>
+  <div class="period rise">即日起<i></i><b>12/31</b></div>
+
+  <div class="hero-photo ph rise" data-label="聖誕作品照（主視覺）">
+    <img src="photos/hero.jpg" alt="全家在粉色聖誕佈景前擁抱" style="object-position:50% 30%">
+  </div>
+  <span class="spark" style="right:6%;top:300px">✦</span>
+  <span class="spark" style="left:4%;top:420px;font-size:16px">✦</span>
+</header>
+
+<div class="wrap rel">
+  <div class="note-letter rise">
+    <p>2026，謝謝你/妳這一年的努力與溫柔。<br>在年底，把一家人的樣子好好記錄下來，<br>讓這份愛，被好好收藏。</p>
+    <p class="xmas">Merry Christmas，祝聖誕快樂。</p>
+    <div class="sign">— <span>Dear Liz</span></div>
+  </div>
+
+  <div class="tk-wrap early" id="early" style="margin-top:40px">
+    <span class="tag">早鳥限定</span>
+    <div class="ticket">
+      <div class="early-in">
+        <div class="ph" data-label="形象照作品"><img src="photos/portrait.jpg" alt="媽媽個人形象照"></div>
+        <div class="early-tx">
+          <div class="for">For You</div>
+          <div class="d">11.1<i></i>11.30</div>
+          <div class="rule"></div>
+          <h3>下訂加碼贈</h3>
+          <p class="gift">爸爸或媽媽<br>專屬個人形象照</p>
+          <div class="left" id="earlyLeft"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tk-wrap" id="thanksWrap">
+    <svg class="bow" viewBox="0 0 100 80" aria-hidden="true">
+      <path d="M50 30 C30 4 6 6 8 24 C10 40 34 40 50 32Z" fill="#eab3c3"/><path d="M50 30 C70 4 94 6 92 24 C90 40 66 40 50 32Z" fill="#e3a2b5"/>
+      <path d="M46 32 L30 74 L40 68 L46 78 L52 36Z" fill="#e3a2b5"/><path d="M54 32 L70 72 L60 67 L54 78 L48 36Z" fill="#eab3c3"/>
+      <ellipse cx="50" cy="31" rx="8" ry="7" fill="#d98ea4"/>
+    </svg>
+    <span class="tag">年末感謝禮</span>
+    <div class="ticket" id="ticket">
+      <p class="cond">當日諮詢預定任一寫真方案，即可享</p>
+      <div class="or">
+        <div><h4>方案現折</h4><div class="amt"><sup>$</sup>2,000</div><small>&nbsp;<br>&nbsp;</small></div>
+        <span class="hrt">或</span>
+        <div><h4>儲值金</h4><div class="amt"><sup>$</sup>4,000</div><small>可折抵加購<br>服務、產品</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="expired" id="expired">這次的年末感謝禮已經結束了，<br>謝謝你的喜歡，我們明年聖誕見 🎄</div>
+
+  <section class="works">
+    <div class="s">Christmas Portrait</div>
+    <h2>聖誕寫真作品</h2>
+    <p>今年的聖誕，換你和最重要的人一起入鏡</p>
+    <div class="grid">
+      <div class="ph wide" data-label="聖誕作品 1"><img src="photos/pb1.jpg" alt="懷孕媽媽和兒子頭頂禮物在聖誕樹旁"></div>
+      <div class="ph" data-label="聖誕作品 2"><img src="photos/rb1.jpg" alt="爸媽靠在一起，女兒在前面做鬼臉"></div>
+      <div class="ph" data-label="聖誕作品 3"><img src="photos/rb2.jpg" alt="穿粉色紗裙的小女孩比手勢"></div>
+      <div class="ph wide" data-label="聖誕作品 4"><img src="photos/pk1.jpg" alt="媽媽和兩個孩子坐在聖誕樹中間"></div>
+    </div>
+  </section>
+
+  <div class="cta" id="cta">
+    <a class="btn" id="bookBtn" href="#" target="_blank" rel="noopener">立即預約諮詢</a>
+  </div>
+</div>
+</div></div>
+<button class="replay" id="replay">再看一次開信</button>
+
+<footer class="rel">
+  <div class="brand">DEAR LIZ</div>
+  <p>讓每一份愛，都被好好收藏</p>
+</footer>
+<a class="float" id="float" href="#" target="_blank" rel="noopener">🎁 預約領年末感謝禮</a>
+</div>
+
+<script>
+var BOOKING_URL = 'https:' + '/' + '/dearlizzlink.pse.is/9pft33';
+document.getElementById('bookBtn').href = BOOKING_URL;
+document.getElementById('float').href = BOOKING_URL;
+
+/* 照片：有檔案就顯示，沒有就留提示框 */
+document.querySelectorAll('.ph img').forEach(function(im){
+  function ok(){ im.parentNode.classList.add('has'); }
+  function bad(){ im.style.display = 'none'; }
+  if (im.complete) { if (im.naturalWidth) ok(); else bad(); }
+  im.addEventListener('load', ok); im.addEventListener('error', bad);
+});
+
+/* Thank you 手寫字放在主視覺照片上 */
+(function(){
+  var t = document.createElement('div'); t.className = 'thanks'; t.textContent = 'Thank you';
+  document.querySelector('.hero-photo').appendChild(t);
+})();
+
+/* 期限（台灣日期） */
+(function(){
+  var now = new Date();
+  var tw = new Date(now.getTime() + (now.getTimezoneOffset() + 480) * 60000);
+  var today = new Date(tw.getFullYear(), tw.getMonth(), tw.getDate());
+  var earlyEnd = new Date(2026, 10, 30), thanksEnd = new Date(2026, 11, 31), day = 86400000;
+  if (today > earlyEnd) document.getElementById('early').classList.add('hide');
+  else {
+    var d = Math.round((earlyEnd - today) / day);
+    document.getElementById('earlyLeft').innerHTML = d === 0 ? '今天是早鳥<b>最後一天</b>' : '早鳥還剩 <b>' + (d + 1) + '</b> 天';
+  }
+  if (today > thanksEnd) {
+    document.getElementById('thanksWrap').style.display = 'none';
+    document.getElementById('expired').style.display = 'block';
+    document.getElementById('cta').style.display = 'none';
+    document.getElementById('float').remove();
+  }
+})();
+
+/* 開信 */
+(function(){
+  var env = document.getElementById('env'), intro = document.getElementById('intro'), main = document.getElementById('main');
+  function open(){
+    if (env.classList.contains('open')) return;
+    env.classList.add('open');
+    setTimeout(function(){ intro.classList.add('gone'); }, 1500);
+    setTimeout(function(){
+      intro.style.display = 'none';
+      main.classList.add('show');
+      window.scrollTo(0, 0);
+    }, 2100);
+  }
+  env.addEventListener('click', open);
+  document.getElementById('replay').addEventListener('click', function(){
+    main.classList.remove('show');
+    env.classList.remove('open');
+    intro.classList.remove('gone');
+    intro.style.display = '';
+    window.scrollTo(0, 0);
+  });
+})();
+
+/* 浮動按鈕：滑過票卡後出現，到底部預約鈕時收起 */
+(function(){
+  var fl = document.getElementById('float'); if (!fl) return;
+  var tk = document.getElementById('ticket'), cta = document.getElementById('cta');
+  function check(){
+    var past = tk.offsetParent !== null && tk.getBoundingClientRect().bottom < 0;
+    var near = cta.getBoundingClientRect().top < innerHeight;
+    fl.classList.toggle('on', past && !near);
+  }
+  addEventListener('scroll', check, {passive:true}); check();
+})();
+
+/* 雪白小雪花飄落 */
+(function(){
+  var c = document.getElementById('fx'); if (!c.getContext) return;
+  var x = c.getContext('2d'), w, h, dpr = Math.min(devicePixelRatio || 1, 2), f = [];
+  function size(){ w = c.width = innerWidth * dpr; h = c.height = innerHeight * dpr; }
+  size(); addEventListener('resize', size);
+  function make(top){
+    var near = Math.random() < .3;
+    return {x:Math.random(), y:top ? -.03 : Math.random(),
+      r:near ? 1.8 + Math.random() * 1 : .8 + Math.random() * 1,
+      s:near ? .0016 + Math.random() * .001 : .0007 + Math.random() * .0008,
+      sway:Math.random() * 6, sw:.004 + Math.random() * .01, a:near ? .6 : .35 + Math.random() * .25};
+  }
+  for (var i = 0; i < 45; i++) f.push(make(false));
+  (function draw(){
+    x.clearRect(0, 0, w, h);
+    x.fillStyle = '#fff';
+    x.shadowColor = 'rgba(95,105,150,.4)';
+    f.forEach(function(p, i){
+      p.y += p.s; p.sway += .012;
+      if (p.y > 1.03) f[i] = p = make(true);
+      var px = (p.x + Math.sin(p.sway) * p.sw) * w, py = p.y * h, r = p.r * dpr;
+      x.globalAlpha = p.a; x.shadowBlur = r * 2.2;
+      var g = x.createRadialGradient(px, py, 0, px, py, r);
+      g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(.75, 'rgba(255,255,255,1)'); g.addColorStop(1, 'rgba(255,255,255,.6)');
+      x.fillStyle = g;
+      x.beginPath(); x.arc(px, py, r, 0, 7); x.fill();
+    });
+    x.globalAlpha = 1; x.shadowBlur = 0;
+    requestAnimationFrame(draw);
+  })();
+})();
+</script>
+</body>
+</html>
