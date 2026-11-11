@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>12 個和孩子一起做的聖誕小儀式｜Dear Liz</title>
+<meta name="description" content="從寶寶到大孩子都能做，陪孩子過一個有儀式感的聖誕節，也把今年的樣子好好留下來。">
+<meta property="og:title" content="12 個和孩子一起做的聖誕小儀式 🎄">
+<meta property="og:description" content="從寶寶到大孩子都能做，一項一項勾起來，再把今年的樣子拍下來。">
+<meta property="og:image" content="https://dearlizjas.github.io/dearliz-video/christmas/gift.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#f5f3ef;--paper:#fdfcfa;--ink:#1d1b19;--muted:#8a847b;--line:#d9d4cc;
+  --red:#a3131a;--red-deep:#6e0a0e;--olive:#6d6f45;--gold:#b89a62;
+  --serif:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --script:"Great Vibes",cursive;
+  --latin:"Cormorant Garamond","Noto Serif TC",Georgia,serif;
+  --display:"Playfair Display","Noto Serif TC",serif;
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http:%2F%2Fwww.w3.org%2F2000%2Fsvg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .42 0 0 0 0 .38 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--grain),linear-gradient(180deg,#fbfaf8 0%,var(--ivory) 100%) fixed;color:var(--ink);font-family:var(--serif);font-weight:400;line-height:1.8;font-size:16px}
+button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+a{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.wrap{width:min(520px,100% - 36px);margin-inline:auto}
+canvas.fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.rel{position:relative;z-index:1}
+
+/* 共用字 */
+.script{font-family:var(--script);color:var(--red);font-weight:400}
+.caps{font-family:var(--display);font-weight:500;letter-spacing:.32em;padding-left:.32em;color:var(--ink)}
+.tiny{font-family:var(--latin);font-size:11px;letter-spacing:.5em;padding-left:.5em;color:var(--muted)}
+.rise{opacity:0;transform:translateY(14px);animation:rise 1.3s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* 主視覺 */
+header{text-align:center;padding:46px 0 26px}
+header .script{display:block;font-size:clamp(56px,17vw,84px);line-height:.95;animation-delay:.15s}
+header .caps{font-size:clamp(13px,3.9vw,17px);margin-top:16px;animation-delay:.55s}
+header .tiny{margin-top:10px;animation-delay:.8s}
+.sprig{display:block;margin:26px auto 4px;width:120px;animation-delay:1s}
+h1{margin:6px 0 0;font-weight:600;font-size:clamp(23px,6.6vw,28px);line-height:1.55;letter-spacing:.08em;animation-delay:1.05s}
+.lead{margin:12px auto 0;max-width:20em;color:var(--muted);font-size:14.5px;letter-spacing:.05em;animation-delay:1.2s}
+.count{display:inline-flex;align-items:baseline;gap:8px;margin-top:22px;padding:8px 24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:13px;letter-spacing:.14em;color:var(--muted);animation-delay:1.35s}
+.count b{font-family:var(--display);font-weight:500;font-size:30px;line-height:1;color:var(--red);letter-spacing:0}
+
+/* 篩選與進度 */
+.bar{position:sticky;top:0;z-index:5;background:rgba(250,248,245,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 0 10px}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;min-height:34px;padding:3px 15px;border:1px solid var(--line);border-radius:30px;background:var(--paper);font-size:13.5px;letter-spacing:.06em;color:var(--muted)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.prog{display:flex;align-items:center;gap:10px;margin-top:10px;font-family:var(--latin);font-size:14px;color:var(--muted)}
+.track{flex:1;height:3px;background:#e6e1d8;overflow:hidden}
+.fill{height:100%;width:0;background:var(--red);transition:width .45s}
+
+/* 清單 */
+main{padding:6px 0 10px}
+.stage{text-align:center;margin:40px 0 16px}
+.stage .no{font-family:var(--display);font-size:12px;letter-spacing:.4em;padding-left:.4em;color:var(--red)}
+.stage h2{margin:2px 0 0;font-size:19px;font-weight:600;letter-spacing:.2em;padding-left:.2em}
+.stage .en{font-family:var(--latin);font-style:italic;font-size:15px;color:var(--muted)}
+.item{display:flex;gap:14px;width:100%;text-align:left;margin-bottom:12px;padding:18px 18px 16px;border:1px solid var(--line);border-radius:3px;background:var(--grain),var(--paper);box-shadow:0 10px 22px -18px rgba(90,75,50,.5);transition:border-color .25s,background .25s}
+.box{flex:none;width:26px;height:26px;margin-top:3px;border:1px solid var(--red);border-radius:50%;display:grid;place-items:center;color:transparent;font-size:13px;transition:all .3s}
+.item h3{margin:0;font-size:16.5px;font-weight:600;letter-spacing:.05em;line-height:1.5}
+.item h3 i{font-family:var(--display);font-style:normal;font-size:14px;color:var(--red);margin-right:6px}
+.item p{margin:5px 0 9px;font-size:14px;color:#5d5850;line-height:1.75}
+.age{display:inline-block;padding:0 10px;border:1px solid #cfd0b8;border-radius:20px;font-size:12px;letter-spacing:.06em;color:var(--olive)}
+.photo{display:block;margin-top:10px;padding:8px 12px;border-left:2px solid var(--red);background:#f8efe9;font-size:13px;line-height:1.65;color:var(--red-deep)}
+.item.on{border-color:#e3c8c4}
+.item.on .box{background:var(--red);color:#fff;box-shadow:0 3px 8px -2px rgba(163,19,26,.5)}
+.item.on h3{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--red)}
+.item.hide{display:none}
+
+.hint{margin:26px 0 0;text-align:center;font-size:13px;color:var(--muted);letter-spacing:.05em}
+
+/* 聖誕寫真區 */
+.shoot{position:relative;z-index:1;margin-top:44px;padding:0 0 40px;text-align:center}
+.shoot .card{position:relative;padding:40px 22px 30px;background:var(--grain),#fff;border:1px solid var(--line);outline:1px solid var(--line);outline-offset:-8px;box-shadow:0 24px 40px -26px rgba(90,75,50,.6)}
+.ribbon{position:absolute;left:50%;top:0;transform:translate(-50%,-50%);padding:5px 20px;background:var(--red);color:#fff;font-size:13px;letter-spacing:.24em;padding-left:calc(20px + .24em);white-space:nowrap;box-shadow:0 6px 14px -6px rgba(110,10,14,.6)}
+.shoot .script{display:block;font-size:clamp(44px,13vw,56px);line-height:1}
+.shoot .caps{font-size:12px;margin-top:10px;color:var(--muted)}
+.shoot h2{margin:20px 0 8px;font-size:clamp(22px,6.2vw,26px);font-weight:600;letter-spacing:.1em;line-height:1.6}
+.shoot h2 em{font-style:normal;color:var(--red)}
+.shoot .intro{margin:0 auto 24px;max-width:21em;font-size:14.5px;color:#5d5850}
+.why{display:grid;gap:0;text-align:left;margin:0 0 26px;border-top:1px solid var(--line)}
+.why div{display:flex;gap:14px;align-items:flex-start;padding:14px 4px;border-bottom:1px solid var(--line)}
+.why b{flex:none;font-family:var(--display);font-weight:500;font-size:20px;line-height:1.35;color:var(--red)}
+.why h4{margin:0;font-size:15.5px;font-weight:600;letter-spacing:.06em}
+.why p{margin:2px 0 0;font-size:13.5px;color:#5d5850;line-height:1.7}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;max-width:330px;min-height:54px;margin:0 auto 12px;padding:10px 20px;border:1px solid var(--red);border-radius:2px;background:var(--red);color:#fff;font-size:15.5px;letter-spacing:.14em;text-decoration:none;box-shadow:0 12px 22px -12px rgba(110,10,14,.75)}
+.btn.ghost{background:transparent;border-color:var(--line);color:var(--ink);box-shadow:none;min-height:48px;font-size:14.5px}
+.lineid{margin:8px 0 0;font-family:var(--latin);font-size:14px;letter-spacing:.2em;color:var(--muted)}
+footer{position:relative;z-index:1;text-align:center;padding:10px 0 calc(90px + env(safe-area-inset-bottom));color:var(--muted)}
+footer .caps{font-size:13px}
+footer p{margin:6px 0 0;font-size:12px;letter-spacing:.12em}
+
+/* 浮動按鈕 */
+.float{position:fixed;right:14px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:8;display:flex;align-items:center;gap:6px;padding:11px 18px;border-radius:40px;background:var(--red);color:#fff;font-size:14px;letter-spacing:.1em;text-decoration:none;box-shadow:0 10px 22px -8px rgba(110,10,14,.65);transition:opacity .35s,transform .35s}
+.float.off{opacity:0;transform:translateY(16px);pointer-events:none}
+.toast{position:fixed;left:50%;bottom:84px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--ink);color:#fff;padding:10px 20px;border-radius:30px;font-size:14px;letter-spacing:.05em;white-space:nowrap;transition:all .35s;z-index:9}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion:reduce){canvas.fx{display:none}.rise{animation:none;opacity:1;transform:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<canvas class="fx" id="fx"></canvas>
+
+<header class="rel wrap">
+  <span class="script rise">Merry Christmas</span>
+  <div class="caps rise">TWELVE LITTLE RITUALS</div>
+  <div class="tiny rise">DEAR LIZ</div>
+  <svg class="sprig rise" viewBox="0 0 120 40" aria-hidden="true">
+    <path d="M60 22 C45 10 30 8 14 14 C26 16 36 20 44 26 C34 24 24 26 16 32 C32 34 46 30 60 22Z" fill="#6d6f45"/>
+    <path d="M60 22 C75 10 90 8 106 14 C94 16 84 20 76 26 C86 24 96 26 104 32 C88 34 74 30 60 22Z" fill="#7d7f52"/>
+    <circle cx="56" cy="22" r="5" fill="#a3131a"/><circle cx="65" cy="20" r="4.4" fill="#b8191f"/><circle cx="61" cy="28" r="4.2" fill="#8f1016"/>
+    <circle cx="54.6" cy="20.6" r="1.3" fill="#fff" opacity=".55"/><circle cx="63.8" cy="18.8" r="1.1" fill="#fff" opacity=".55"/>
+  </svg>
+  <h1 class="rise">12 個和孩子一起做的<br>聖誕小儀式</h1>
+  <p class="lead rise">不用很盛大，一點點用心，<br>就是孩子記得最久的聖誕節。</p>
+  <div class="count rise" id="count"></div>
+</header>
+
+<div class="listzone">
+<div class="bar">
+  <div class="wrap">
+    <div class="chips" role="group" aria-label="依年齡篩選">
+      <button class="chip" data-f="all" aria-pressed="true">全部</button>
+      <button class="chip" data-f="0" aria-pressed="false">寶寶也可以</button>
+      <button class="chip" data-f="2" aria-pressed="false">2 歲以上</button>
+      <button class="chip" data-f="3" aria-pressed="false">3 歲以上</button>
+    </div>
+    <div class="prog"><div class="track"><div class="fill" id="fill"></div></div><span id="progTx">0 / 12</span></div>
+  </div>
+</div>
+
+<main class="wrap rel" id="list"></main>
+</div>
+
+<section class="shoot" id="shoot">
+  <div class="wrap">
+    <div class="card">
+      <span class="ribbon">聖誕寫真 預約中</span>
+      <span class="script">Christmas Portrait</span>
+      <div class="caps">SEIZE THE MOMENT</div>
+      <h2>最後一個儀式，<br>把今年的<em>聖誕</em>拍下來</h2>
+      <p class="intro">倒數月曆會拆完，聖誕樹會收起來，<br>但今年他抱著你的樣子，明年就不一樣了。</p>
+      <div class="why">
+        <div><b>01</b><span><h4>聖誕氛圍的全家合照</h4><p>不用自己佈置、不用架腳架，全家一起入鏡，爸媽也不會只出現在照片外面。</p></span></div>
+        <div><b>02</b><span><h4>寶寶也能放心拍</h4><p>有安撫師在旁邊陪著，哄睡、逗笑、換裝都慢慢來，照孩子的節奏拍。</p></span></div>
+        <div><b>03</b><span><h4>一年一張，排成成長紀錄</h4><p>每年聖誕回來拍一次，跟手印卡一樣，看得見孩子一年一年長大。</p></span></div>
+      </div>
+      <a class="btn js-line" href="#" target="_blank" rel="noopener">立即預約聖誕寫真</a>
+      <button class="btn ghost" id="shareBtn">把清單分享給另一半</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="caps">DEAR LIZ</div>
+  <p>讓每一份愛，都被好好收藏</p>
+</footer>
+
+<a class="float off js-line" id="float" href="#" target="_blank" rel="noopener">📷 預約聖誕寫真</a>
+<div class="toast" id="toast"></div>
+
+<script>
+/* 預約連結：拿到網址後填在這裡 */
+var BOOKING_URL = 'https:' + '/' + '/dearlizzlink.pse.is/9pft33';
+var KEY = 'dearliz-xmas-rituals-2026';
+
+/* age：0 = 寶寶也可以，2 = 2 歲以上，3 = 3 歲以上；photo = 拍照小提醒 */
+var STAGES = [
+  {name:'開始倒數', en:'Early December', items:[
+    {t:'聖誕倒數月曆', d:'每天打開一格，裡面放一張小紙條，寫一件今天要一起做的小事。', age:2},
+    {t:'一起佈置聖誕樹', d:'每年讓孩子掛一個屬於他的吊飾，寫上名字和年份。寶寶可以由爸媽抱著掛。', age:0,
+      photo:'站在樹前拍一張，每年同一個角度，就是最好的成長對照。'},
+    {t:'量身高、蓋手印腳印', d:'每年聖誕留一次，用同一張卡紙一直蓋下去，看小手一年一年變大。', age:0,
+      photo:'小手小腳的特寫，過了這個冬天就再也拍不到了。'}
+  ]},
+  {name:'期待感', en:'Mid December', items:[
+    {t:'寫信給聖誕老公公', d:'還不會寫字就用畫的，爸媽在旁邊幫忙寫下孩子說的話。', age:3},
+    {t:'聖誕繪本夜', d:'睡前讀一本聖誕故事，每年都讀同一本，會變成家裡的傳統。', age:0},
+    {t:'做一份小禮物送別人', d:'送給阿公阿嬤、老師或鄰居，讓孩子知道聖誕節也是給予的節日。', age:3}
+  ]},
+  {name:'平安夜', en:'Christmas Eve', items:[
+    {t:'幫聖誕老公公準備點心', d:'一杯牛奶、一片餅乾，再加一根給麋鹿的紅蘿蔔。', age:2},
+    {t:'換上聖誕服，拍一張全家福', d:'全家穿同一個色系，紅、綠、米白都很有聖誕感，記得爸媽也要入鏡。', age:0,
+      photo:'想要一張每個人都看鏡頭、都在笑的全家福，交給攝影師會輕鬆很多。'},
+    {t:'關燈點燈串時間', d:'整個家只開聖誕燈，一起聊聊「今年最開心的一件事」。', age:3}
+  ]},
+  {name:'聖誕節當天', en:'Christmas Day', items:[
+    {t:'找禮物的小線索', d:'留一張聖誕老公公的回信，或在門口撒一點麵粉當雪地腳印。', age:3},
+    {t:'一起做聖誕早餐', d:'鬆餅擠成聖誕樹形狀、草莓當帽子，簡單也很有儀式感。', age:0},
+    {t:'寫一封給孩子的信', d:'寫下今年的他是什麼樣子，收進盒子裡，等他長大再一起打開。', age:0,
+      photo:'信裡附上一張今年的照片，長大打開時，他會看見自己當年的樣子。'}
+  ]}
+];
+var AGE_TX = {0:'寶寶也可以', 2:'2 歲以上', 3:'3 歲以上'};
+var NO = ['I','II','III','IV'];
+
+var done = {};
+try { done = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { done = {}; }
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} }
+
+var list = document.getElementById('list');
+var n = 0, si = 0, html = '';
+STAGES.forEach(function(s){
+  html += '<div class="stage"><div class="no">' + NO[si++] + '</div><h2>' + s.name + '</h2><div class="en">' + s.en + '</div></div>';
+  s.items.forEach(function(it){
+    n++;
+    html += '<button class="item' + (done[n] ? ' on' : '') + '" data-i="' + n + '" data-age="' + it.age + '" aria-pressed="' + (done[n] ? 'true' : 'false') + '">' +
+      '<span class="box" aria-hidden="true">✓</span><span><h3><i>' + (n < 10 ? '0' + n : n) + '</i>' + it.t + '</h3><p>' + it.d + '</p>' +
+      '<span class="age">' + AGE_TX[it.age] + '</span>' +
+      (it.photo ? '<span class="photo">📷 ' + it.photo + '</span>' : '') + '</span></button>';
+  });
+});
+list.innerHTML = html;
+var TOTAL = n;
+
+function progress(){
+  var c = 0;
+  for (var k in done) if (done[k]) c++;
+  document.getElementById('fill').style.width = (c / TOTAL * 100) + '%';
+  document.getElementById('progTx').textContent = c + ' / ' + TOTAL;
+  return c;
+}
+progress();
+
+var toastT;
+function toast(msg){
+  var t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastT); toastT = setTimeout(function(){ t.classList.remove('show'); }, 2200);
+}
+
+list.addEventListener('click', function(e){
+  if (e.target.closest('a')) return;
+  var b = e.target.closest('.item'); if (!b) return;
+  var i = b.getAttribute('data-i');
+  done[i] = !done[i];
+  b.classList.toggle('on', done[i]);
+  b.setAttribute('aria-pressed', done[i] ? 'true' : 'false');
+  save();
+  var c = progress();
+  if (done[i]) toast(c === TOTAL ? '12 項全部完成，聖誕快樂 🎄' : '又多了一個回憶 ✨');
+});
+
+document.querySelectorAll('.chip').forEach(function(ch){
+  ch.addEventListener('click', function(){
+    var f = ch.getAttribute('data-f');
+    document.querySelectorAll('.chip').forEach(function(x){ x.setAttribute('aria-pressed', x === ch ? 'true' : 'false'); });
+    document.querySelectorAll('.item').forEach(function(it){
+      var a = +it.getAttribute('data-age');
+      var show = f === 'all' || (f === '0' ? a === 0 : a <= +f);
+      it.classList.toggle('hide', !show);
+    });
+    document.querySelectorAll('.stage').forEach(function(st){
+      var el = st.nextElementSibling, any = false;
+      while (el && el.classList.contains('item')) { if (!el.classList.contains('hide')) any = true; el = el.nextElementSibling; }
+      st.style.display = any ? '' : 'none';
+    });
+  });
+});
+
+/* 倒數 */
+(function(){
+  var now = new Date();
+  var xmas = new Date(now.getFullYear(), 11, 25);
+  var days = Math.round((xmas - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / 86400000);
+  var el = document.getElementById('count');
+  if (days > 0) el.innerHTML = '距離聖誕節還有 <b>' + days + '</b> 天';
+  else if (days === 0) el.innerHTML = '今天就是聖誕節 🎄';
+  else el.innerHTML = '明年聖誕，我們再一起過 🎄';
+})();
+
+/* 預約按鈕 */
+document.querySelectorAll('.js-line').forEach(function(a){
+  if (BOOKING_URL) a.href = BOOKING_URL;
+  else a.addEventListener('click', function(e){ e.preventDefault(); toast('預約連結準備中'); });
+});
+document.getElementById('shareBtn').addEventListener('click', function(){
+  var url = location.href.split('#')[0];
+  var text = '這個聖誕節我們一起做這些吧 🎄\n12 個和孩子一起做的聖誕小儀式：\n' + url;
+  if (navigator.share) { navigator.share({title:'12 個和孩子一起做的聖誕小儀式', text:text}).catch(function(){}); }
+  else { location.href = 'https:' + '/' + '/line.me/R/share?text=' + encodeURIComponent(text); }
+});
+
+/* 浮動預約鈕：滑過主視覺才出現，到寫真區就收起 */
+(function(){
+  var fl = document.getElementById('float'), shoot = document.getElementById('shoot');
+  function check(){
+    var past = scrollY > 520;
+    var atShoot = shoot.getBoundingClientRect().top < innerHeight * .85;
+    fl.classList.toggle('off', !past || atShoot);
+  }
+  addEventListener('scroll', check, {passive:true}); check();
+})();
+
+/* 金色光點 */
+(function(){
+  var c = document.getElementById('fx'); if (!c.getContext) return;
+  var x = c.getContext('2d'), w, h, dpr = Math.min(devicePixelRatio || 1, 2), dots = [];
+  function size(){ w = c.width = innerWidth * dpr; h = c.height = innerHeight * dpr; }
+  size(); addEventListener('resize', size);
+  for (var i = 0; i < 34; i++) dots.push({x:Math.random(), y:Math.random(), r:.6 + Math.random() * 1.8, s:.00025 + Math.random() * .0006, o:Math.random() * 6});
+  (function draw(){
+    x.clearRect(0, 0, w, h);
+    dots.forEach(function(d){
+      d.y += d.s; d.o += .012; if (d.y > 1.03) { d.y = -.03; d.x = Math.random(); }
+      x.globalAlpha = .25 + Math.sin(d.o) * .2;
+      x.beginPath(); x.arc((d.x + Math.sin(d.o * .5) * .006) * w, d.y * h, d.r * dpr, 0, 7);
+      x.fillStyle = '#b89a62'; x.fill();
+    });
+    requestAnimationFrame(draw);
+  })();
+})();
+</script>
+</body>
+</html>
